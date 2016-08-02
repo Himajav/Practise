@@ -1,0 +1,33 @@
+<form name='myForm' >
+
+ 		<table class="ng-scope"><tr><td></td><td> 
+ 		<font style="height: 50px;color:#0000bb;align:center;font-size: 30px;font-style: inherit;"> Product Information
+ 		</font><br><br></td></tr> 
+ 	
+		<tr><td><label>Product Number*:</label></td>
+			<td><input type="text" ng-model="create.productid" id=productid>
+			<font color="#0000bb" >Not case sensitive.</font><td>
+			<!-- <p ng-show="create.battleName.$invalid && !create.battleName.$pristine" class="help-block">You name is required.</p> -->
+       </tr>
+      
+       <tr><td><label>Product Name*:</label></td>
+			<td><input ng-model="create.productName" id=productNametxt ></td>
+       </tr>
+      
+       <tr><td>         
+       </td>
+			<td>
+			
+			<button ng-if="visible" ng-show="visible" ng-click="saveFromData('newbottleform',create,'Save')" > 
+			Save </button>				
+			<button type="submit" ng-show="visible" ng-click="createNewBottle(abort)" align="right">Edit</button>				
+			
+			</div>
+			
+			
+			</td>
+	      </tr>
+       </table>
+ 
+       
+</form>
